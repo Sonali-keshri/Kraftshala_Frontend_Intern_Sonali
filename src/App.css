@@ -1,0 +1,71 @@
+.main_container {
+    width: 100vw;
+    background: url(./assets/bgmain2.jpg);
+    background-size: cover;
+    background-color: black;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer {
+    background-color: rgb(24, 23, 23, .8);
+    width: 100%;
+    padding: 10px;
+
+}
+
+.leftBox {
+    padding: 10px;
+}
+
+.forecaste_card {
+    padding: 10px 25px;
+
+    border-radius: 8px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .leftBox{
+        margin: auto;
+        width: 999px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 640px) {
+ 
+    .main_container{
+        overflow: auto;
+    }
+    .layer{
+        width: 100vw;
+    }
+    .leftBox{
+        margin: 0;
+        margin-top: 60px;
+        padding: 0;
+    }
+
+    .forecast-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+
+    
+}
